@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My To-Do List</title>
+
+    <meta name="description" content="Responsive To-Do List Application built using HTML, CSS and JavaScript">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                📝 My To-Do
+            </div>
+
+            <button id="themeBtn" aria-label="Change Theme">
+                🌙
+            </button>
+
+        </nav>
+
+    </header>
+
+    <!-- Main Content -->
+
+    <main>
+
+        <!-- Hero -->
+
+        <section class="hero">
+
+            <h1>Organize Your Day</h1>
+
+            <p>
+                Stay productive by managing your daily tasks efficiently.
+            </p>
+
+        </section>
+
+        <!-- Add Task -->
+
+        <section class="task-input">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a new task..."
+                aria-label="Task Name">
+
+            <button id="addTask">
+                Add Task
+            </button>
+
+        </section>
+
+        <!-- Filter Buttons -->
+
+        <section class="filters">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="active">
+                Active
+            </button>
+
+            <button class="filter-btn" data-filter="completed">
+                Completed
+            </button>
+
+        </section>
+
+        <!-- Task List -->
+
+        <section class="task-section">
+
+            <ul id="taskList">
+
+            </ul>
+
+            <!-- Empty State -->
+
+            <div id="emptyState">
+
+                <img src="/trash-bin-outline.svg"
+                     alt="No Tasks">
+
+                <h3>No Tasks Yet</h3>
+
+                <p>Add your first task to get started.</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Swetha Reddy | To-Do List App
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
